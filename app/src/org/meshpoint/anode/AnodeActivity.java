@@ -65,6 +65,7 @@ public class AnodeActivity extends Activity implements StateListener {
     	stopButton = (Button)findViewById(R.id.stop_button);
     	stopButton.setOnClickListener(new StopClickListener());
     	argsText = (EditText)findViewById(R.id.args_editText);
+    	argsText.setText("/sdcard/gpii/android/gpii.js");
     	stateText = (TextView)findViewById(R.id.args_stateText);
     	argsText.setOnKeyListener(new OnKeyListener() {
     	    public boolean onKey(View v, int keyCode, KeyEvent event) {
